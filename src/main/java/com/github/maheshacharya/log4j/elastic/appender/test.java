@@ -23,7 +23,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-public class Log4jElasticAppender extends AppenderSkeleton {
+public class test extends AppenderSkeleton {
 
     private ExecutorService threadPool = Executors.newSingleThreadExecutor();
     private JestClient client;
@@ -35,7 +35,7 @@ public class Log4jElasticAppender extends AppenderSkeleton {
     private String datePattern = "MM/dd/yyyy HH:mm:ss";
     private SimpleDateFormat sdf = new SimpleDateFormat(datePattern);
 
-    private Logger logger = org.slf4j.LoggerFactory.getLogger(Log4jElasticAppender.class);
+    private Logger logger = org.slf4j.LoggerFactory.getLogger(test.class);
 
     /**
      * @param event

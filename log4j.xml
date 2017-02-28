@@ -2,7 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
     <!-- elastic logging appender -->
-    <appender name="elastic" class="com.github.maheshacharya.log4j.elastic.appender.Log4jElasticAppender">
+    <appender name="elastic" class="com.github.maheshacharya.log4j.elastic.appender.test">
         <param name="DatePattern" value="MM/dd/yyyy HH:mm:ss"/>
         <param name="HostName" value="192.168.99.100"/>
         <param name="ElasticHost" value="http://192.168.99.100:9200/"/>
